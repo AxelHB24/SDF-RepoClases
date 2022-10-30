@@ -1,0 +1,237 @@
+.GRILLA { /*CAJA CONTENEDORA DE LA GRILLA Y OTRAS CAJAS*/
+    display: grid; /*PROPIEDAD Y VALOR PARA CREAR EN LA CAJA UNA GRILLA*/
+    grid-template-columns: repeat(15, 50px); /*COLUMNAS A UTILIZAR (REPITE 15 COLUMNAS DE 50PX CADA UNA)*/
+    grid-template-rows: repeat(16, 50px); /*FILAS A UTILIZAR (REPITE 16 FILAS DE 50PX CADA UNA)*/
+    grid-column-gap: 0px; /*ESPACIADO DE 0PX ENTRE COLUMNAS*/
+    grid-row-gap: 0px; /*ESPACIADO DE 0PX ENTRE FILAS*/
+    justify-content: center;
+}
+
+.div1 { /*CREAMOS LAS CAJAS DENTRO DE LA CAJA "GRILLA" PARA MOLDEAR NUESTRO DIBUJO*/
+    grid-column: 6/11; /*COORDENADA DE LA COLUMNA A PINTAR INICIO/FIN*/
+    grid-row: 1/2; /*COORDENADA DE LA FILA A PINTAR INICIO/FIN*/
+    /*grid-area: 1 / 6 / 2 / 11;  
+    FORMA ABREVIADA: 
+    PRIMER VALOR INICIO DE FILA
+    SEGUNDO INICIO DE COLUMNA
+    TERCERO FIN DE FILA 
+    CUARTO FIN DE COLUMNA */ 
+    background-color: yellow; 
+}
+.div2 { 
+    grid-area: 2 / 4 / 3 / 13;
+    /*FORMA ABREVIADA: 
+    PRIMER VALOR INICIO DE FILA
+    SEGUNDO INICIO DE COLUMNA
+    TERCERO FIN DE FILA 
+    CUARTO FIN DE COLUMNA*/
+    background-color: yellow; 
+}
+.div3 { 
+    grid-area: 3 / 3 / 4 / 14;
+    background-color: yellow; 
+}
+.div4 { 
+    grid-area: 4 / 13 / 5 / 15; 
+    background-color: yellow;
+}
+.div5 { 
+    grid-area: 4 / 10 / 5 / 13; 
+    background-color: white;
+}
+.div6 { 
+    grid-area: 4 / 2 / 5 / 10; 
+    background-color: yellow;
+}
+.div7 { 
+    grid-area: 5 / 14 / 6 / 15; 
+    background-color: yellow;
+}
+.div8 { 
+    grid-area: 5 / 12 / 6 / 14; 
+    background-color: white;
+}
+.div9 { 
+    grid-area: 5 / 11 / 6 / 12; 
+    background-color: black;
+}
+.div10 { 
+    grid-area: 5 / 9 / 6 / 11; 
+    background-color: white;
+}
+.div11 { 
+    grid-area: 5 / 2 / 6 / 9; 
+    background-color: yellow;
+}
+.div12 { 
+    grid-area: 6 / 14 / 7 / 16; 
+    background-color: yellow;
+}
+.div13 { 
+    grid-area: 6 / 13 / 7 / 14; 
+    background-color: white;
+}
+.div14 { 
+    grid-area: 6 / 10 / 7 / 13; 
+    background-color: black;
+}
+.div15 { 
+    grid-area: 6 / 9 / 7 / 10; 
+    background-color: white;
+}
+.div16 { 
+    grid-area: 6 / 1 / 7 / 9; 
+    background-color: yellow;
+}
+.div17 { 
+    grid-area: 7 / 14 / 8 / 16; 
+    background-color: yellow;
+}
+.div18 { 
+    grid-area: 7 / 12 / 8 / 14; 
+    background-color: white;
+}
+.div19 { 
+    grid-area: 7 / 11 / 8 / 12; 
+    background-color: black;
+}
+.div20 { 
+    grid-area: 7 / 9 / 8 / 11; 
+    background-color: white;
+}
+.div21 { 
+    grid-area: 7 / 7 / 8 / 9; 
+    background-color: yellow;
+}
+.div22 { 
+    grid-area: 7 / 4 / 8 / 7; 
+    background-color: black;
+}
+.div23 { 
+    grid-area: 7 / 1 / 8 / 4; 
+    background-color: yellow;
+}
+.div24 { 
+    grid-area: 8 / 13 / 9 / 16; 
+    background-color: yellow;
+}
+.div25 { 
+    grid-area: 8 / 10 / 9 / 13; 
+    background-color: white;
+}
+.div26 { 
+    grid-area: 8 / 8 / 9 / 10; 
+    background-color: yellow;
+}
+.div27 { 
+    grid-area: 8 / 7 / 9 / 8; 
+    background-color: black;
+}
+.div28 { 
+    grid-area: 8 / 4 / 9 / 7; 
+    background-color: yellow;
+}
+.div29 { 
+    grid-area: 8 / 3 / 9 / 4; 
+    background-color: black;
+}
+.div30 { 
+    grid-area: 8 / 1 / 9 / 3; 
+    background-color: yellow;
+}
+.div31 { 
+    grid-area: 9 / 1 / 10 / 16;
+    background-color: yellow; 
+}
+.div32 { 
+    grid-area: 10 / 1 / 11 / 3; 
+    background-color: yellow;
+}
+.div33 { 
+    grid-area: 10 / 3 / 11 / 14; 
+    background-color: black;
+}
+.div34 { 
+    grid-area: 10 / 14 / 11 / 16; 
+    background-color: yellow;
+}
+.div35 { 
+    grid-area: 11 / 2 / 12 / 4; 
+    background-color: yellow;
+}
+.div36 { 
+    grid-area: 11 / 4 / 12 / 6; 
+    background-color: black;
+}
+.div37 { 
+    grid-area: 11 / 6 / 12 / 8; 
+    background-color: pink;
+}
+.div38 { 
+    grid-area: 11 / 8 / 12 / 9; 
+    background-color: black;
+}
+.div39 { 
+    grid-area: 11 / 9 / 12 / 11; 
+    background-color: pink;
+}
+.div40 { 
+    grid-area: 11 / 11 / 12 / 13; 
+    background-color: black;
+}
+.div41 { 
+    grid-area: 11 / 13 / 12 / 15; 
+    background-color: yellow;
+}
+.div42 { 
+    grid-area: 12 / 2 / 13 / 5; 
+    background-color: yellow;
+}
+.div43 { 
+    grid-area: 12 / 5 / 13 / 6; 
+    background-color: black;
+}
+.div44 { 
+    grid-area: 12 / 6 / 13 / 11; 
+    background-color: pink;
+}
+.div45 { 
+    grid-area: 12 / 11 / 13 / 12; 
+    background-color: black;
+}
+.div46 { 
+    grid-area: 12 / 12 / 13 / 15; 
+    background-color: yellow;
+}
+.div47 { 
+    grid-area: 13 / 3 / 14 / 6; 
+    background-color: yellow;
+}
+.div48 { 
+    grid-area: 13 / 6 / 14 / 11; 
+    background-color: pink;
+}
+.div49 { 
+    grid-area: 13 / 11 / 14 / 14; 
+    background-color: yellow;
+}
+.div50 { 
+    grid-area: 14 / 4 / 15 / 6; 
+    background-color: yellow;
+}
+.div51 { 
+    grid-area: 14 / 6 / 15 / 11; 
+    background-color: pink;
+}
+.div52 { 
+    grid-area: 14 / 11 / 15 / 13; 
+    background-color: yellow;
+}
+.div53 { 
+    grid-area: 15 / 6 / 16 / 11; 
+    background-color: pink;
+}
+.div54 { 
+    grid-area: 16 / 7 / 17 / 10; 
+    background-color: pink;
+}

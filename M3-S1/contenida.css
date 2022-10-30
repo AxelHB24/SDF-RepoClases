@@ -1,0 +1,59 @@
+* {  /*SELECTOR QUE AGARRA TODO MI SITIO*/
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {  /*SELECTOR PARA EL CUERPO DE MI SITIO*/
+    background-color: brown;
+  }
+  
+  nav{  /*SELECTOR PARA LLAMAR A LA BARRA DE NAVEGACIÓN, DONDE DENTRO HAY LISTAS*/
+    list-style: none; /*SACAMOS SU ESTILO*/
+    max-width: 70%; /*LE GENERAMOS A ESA CAJA UN ANCHO TOTAL*/
+    margin: 0 auto; /*LE DAMOS COMO PRIMER VALOR 0 PARA ARRIBA Y ABAJO Y AUTO PARA QUE LO CENTRE TOMANDO EN CUENTA SU ANCHO MÁXIMO*/
+    background-color: rgb(97, 233, 120);
+    display: flex; /*SISTEMA FLEXBOX PARA ACOMODAR EL CONTENIDO DENTRO*/
+    justify-content: center; /*PROPIEDAD UTILIZADA PARA CENTRAR ELEMENTOS DE MANERA HORIZONTAL*/
+  }
+  
+  ul {
+    display: inline-block; /*TRABAJAMOS CON EL SELECTOR DE LISTA DESORDENADA Y ROMPEMOS CON SU BLOQUE PARA POSICIONARLO EN LINEA*/
+  }
+  
+  h1 {
+    text-align: center; /*CENTRAMOS EL TÍTULO*/
+  }
+  
+  .contenedor1 {  /*CONTENEDOR CREADO DENTRO DEL MAIN/SECTION/DIV CLASS "CONTENEDOR1" QUE ENCIERRA DENTRO UNA IMAGEN Y UN PÁRRAFO*/
+    display: flex; /*NUEVAMENTE USAMOS FLEX PARA ORDENAR LO QUE ESTÁ DENTRO*/
+    max-width: 70%; /*LE DAMOS UN ANCHO MAXIMO PARA EL SITIO*/
+    margin: 0 auto; /*CENTRAMOS ESA CAJA RESPECTO AL ANCHO QUE LE DIMOS*/
+    background-image: url(Escenario.jpg); /*AGREGO UNA IMAGEN DE FONDO*/
+    background-repeat: no-repeat; /*PROPIEDAD PARA QUE NO REPITA LA IMAGEN PARA LLENAR EL ESPACIO VACÍO*/
+    background-size: cover; /*PROPIEDAD Y VALOR QUE AGRANDA LA IMAGEN SIN REPETIRLA PARA QUE OCUPE ESE ESPACIO VACÍO*/
+  }
+  
+  .contenedor1 .img-casita { /*LLAMO A LA .IMG-CASITA QUE ESTÁ DENTRO DE LA CAJA .CONTENEDOR PARA DARLE UN ANCHO Y ALTO (AJUSTAR SU TANAÑO)*/
+    width: 30%; /*ANCHO*/
+    height: 30%; /*ALTO*/
+  }
+  
+  h1 { /*REPETIMOS PARA EL TÍTULO MISMO FORMATO DE CAJAS, PARA QUE TODAS ESTEN CENTRADAS*/
+    max-width: 70%;
+    margin: 0px auto;
+    background-color: rgb(97, 233, 120);
+  }
+    
+  .banner img { /*PASAMOS A PROGRAMAR LA IMG QUE ESTA DENTRO DE LA CAJA .BANNER*/
+    width: 100%; /*100% DECIMOS QUE OCUPE TODO SU ANCHO*/
+    height: 100px; /*UNA PEQUEÑA ALTURA DE 100 PIXELES*/
+    margin-bottom: -4px;
+  }
+  
+  footer {  /*POR ÚLTIMO PASAMOS AL PIÉ DE PÁGINA DONDE NUEVAMENTE LE DAMOS UN ANCHO A LA CAJA Y LA CENTRAMOS PARA QUE COINCIDAN CON EL RESTO*/
+    max-width: 70%; /*ANCHO PARA LA CAJA*/
+    margin: 0 auto; /*CENTRADO*/
+    height: 40px; /*PEQUEÑA ALTURA A LA CAJA*/
+    background-color: rgb(97, 233, 120);
+    text-align: center; /*ALINEAMOS EL TEXTO*/
+  }
